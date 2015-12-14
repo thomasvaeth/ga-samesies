@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Londrina+Outline);
+@import url(https://fonts.googleapis.com/css?family=Lato:100);
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.home-1,
+.home-2,
+.home-3,
+.home-4,
+.home-5 {
+	height: 550px;
+	border: 1px solid black;
+}
+
+#menu {
+	margin-top: 10px;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 5px;
+}
+
+li {
+	list-style-type: none;
+}
+
+.nav-title {
+	font-family: 'Londrina Outline', cursive;
+	font-size: 72px;
+}
