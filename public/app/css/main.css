@@ -15,33 +15,43 @@ body {
 .home-4,
 .home-5 {
 	height: 550px;
-	border: 1px solid #FFFFFF;
 	transform: skewY(-2deg);
 }
 
 .un-skew {
 	transform: skewY(2deg);
+	margin-top: 50px;
 }
 
 .home-1 {
+	border: 1px solid #FFFFFF;
 	margin-top: -2%;
 	background: #DD5E89;
 	background: -webkit-linear-gradient(to bottom left, #DD5E89, #F7BB97);
-	background: linear-gradient(to bottom left, #DD5E89, #F7BB97);     
+	background: linear-gradient(to bottom left, #DD5E89, #F7BB97);
+	color: #FFFFFF;  
 }
 
-.home-2,
-.home-4 {
+.home-2 {
+	border: 1px solid #FFFFFF;
 	background: #FFFFFF;
+	color: #000000;
+}
+
+.home-4 {
+	border: 1px solid #000000;
+	background: #FFFFFF;
+	color: #000000;
 }
 
 .home-3,
 .home-5 {
+	border: 1px solid #000000;
 	background: #000000;
+	color: #FFFFFF;
 }
 
 #menu {
-	margin-top: 50px;
 	height: 150px;
 }
 
@@ -57,6 +67,7 @@ body {
 #right {
 	float: right;
 	margin-top: 40px;
+	opacity: 0.6;
 }
 
 a,
@@ -66,7 +77,8 @@ a:active,
 a:visited {
 	display: inline-block;
 	text-decoration: none;
-	padding: 0 5px;
+	padding: 0 10px;
+	color: white;
 }
 
 li {
@@ -82,4 +94,31 @@ li {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-size: 27px;
+}
+
+.landing-title {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 108px;
+	margin-left: 10px;
+}
+
+.landing-information {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 45px;
+	margin-left: 10px;
+}
+
+.btn {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	background-color: rgba(0, 0, 0, 0);
+	border: 3px solid #FFFFFF;
+	margin-left: 10px;
+}
+
+.home-4 {
+	background: url('../images/homepage.jpg') center center no-repeat;
+	background-size: cover;
 }
