@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Londrina+Outline);
-@import url(https://fonts.googleapis.com/css?family=Lato:100);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
 html,
 body {
 	height: 100%;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .home-1,
@@ -13,11 +15,48 @@ body {
 .home-4,
 .home-5 {
 	height: 550px;
-	border: 1px solid black;
+	border: 1px solid #FFFFFF;
+	transform: skewY(-2deg);
+}
+
+.un-skew {
+	transform: skewY(2deg);
+}
+
+.home-1 {
+	margin-top: -2%;
+	background: #DD5E89;
+	background: -webkit-linear-gradient(to bottom left, #DD5E89, #F7BB97);
+	background: linear-gradient(to bottom left, #DD5E89, #F7BB97);     
+}
+
+.home-2,
+.home-4 {
+	background: #FFFFFF;
+}
+
+.home-3,
+.home-5 {
+	background: #000000;
 }
 
 #menu {
-	margin-top: 10px;
+	margin-top: 50px;
+	height: 150px;
+}
+
+#left,
+#right {
+	display: inline-block;
+}
+
+#left {
+	float: left;
+}
+
+#right {
+	float: right;
+	margin-top: 40px;
 }
 
 a,
@@ -37,4 +76,10 @@ li {
 .nav-title {
 	font-family: 'Londrina Outline', cursive;
 	font-size: 72px;
+}
+
+.nav-page {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 27px;
 }
