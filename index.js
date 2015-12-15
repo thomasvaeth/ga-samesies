@@ -27,16 +27,16 @@ app.use(function (err, req, res, next) {
   }
 });
 
-app.use('/api/customers', require('./controllers/users'));
+app.use('/api/customers', require('./controllers/customers'));
 
 app.post('/api/auth', function(req, res) {
-	Customer.findOne({email: req.body.email}, function(err, user) {
-		if (err || !user) return res.send({message: 'User not found'});
-		user.authenticated(req.body.password, function(err, result) {
+	Customer.findOne({email: req.body.email}, function(err, customer) {
+		if (err || !customer) return res.send({message: 'User not found'});
+		customer.authenticated(req.body.password, function(err, result) {
 			if (err || !result) return res.send({message: 'User not authenticated'});
 
-      var token = jwt.sign(user, secret);
-      res.send({user: user, token: token});
+      var token = jwt.sign(customer, secret);
+      res.send({customer: customer, token: token});
 		});
 	});
 });
