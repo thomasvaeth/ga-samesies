@@ -93,7 +93,7 @@ button {
 	margin-top: 20px;
 }
 
-/* Home - Picture*/
+/* Home - Picture */
 .home-4 {
 	height: 700px;
 	background: url('../images/homepage.jpg') center center no-repeat;
@@ -110,12 +110,31 @@ button {
 	background: #3498BD;
 }
 
+/* About - Picture */
 .about-2 {
 	height: 700px;
 	background: url('../images/about-1.jpg') center center no-repeat;
 	background-size: cover;
 }
 
+/* About - Profile */
+.about-3 {
+	height: 650px;
+}
+
+.about-title {
+	font-weight: 700;
+	font-size: 72px;
+	margin-top: 25px;
+}
+
+.about-information {
+	font-weight: 300;
+	font-size: 36px;
+	margin-top: 20px;
+}
+
+/* About - Picture */
 .about-4 {
 	height: 700px;
 	background: url('../images/about-2.jpg') center center no-repeat;
