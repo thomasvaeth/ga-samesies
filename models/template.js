@@ -5,7 +5,7 @@ var TemplateSchema = new mongoose.Schema({
   description: String,
   mobile: String,
   desktop: String,
-  freeLink: Number,
+  freeLink: String,
   paidLink: String
 });
 

@@ -3,10 +3,12 @@ var app = angular.module('SamesiesApplication', ['ngRoute', 'CustomerServices', 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 	.when('/', {
-		templateUrl: 'app/views/samesies.html'
+		templateUrl: 'app/views/samesies.html',
+		controller: 'TemplateController'
 	})
 	.when('/templates', {
-		templateUrl: 'app/views/templates.html'
+		templateUrl: 'app/views/templates.html',
+		controller: 'TemplateController'
 	})
 	.when('/about', {
 		templateUrl: 'app/views/about.html'

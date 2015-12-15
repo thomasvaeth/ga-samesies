@@ -1,4 +1,7 @@
 angular.module('CustomerServices', ['ngResource'])
+.factory('Template', ['$resource', function($resource) {
+	return $resource('/api/templates/:id');
+}])
 .factory('Auth', ['$window', function($window) {
 	return {
 		saveToken: function(token) {

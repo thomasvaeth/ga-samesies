@@ -1,4 +1,29 @@
 angular.module('SamesiesControllers', ['CustomerServices'])
+.controller('TemplateController', ['$scope', 'Template', function($scope, Template) {
+	$scope.templates = [];
+
+	Template.query(function success(data) {
+  	var shuffleData = shuffle(data);
+		$scope.templates = shuffleData;
+	}, function error(data) {
+		console.log(data);
+	});
+
+	// -> Fisher–Yates shuffle algorithm
+	function shuffle(arr) {
+		var m = arr.length, t, i;
+		// While there remain elements to shuffle…
+		while (m) {
+			// Pick a remaining element…
+			i = Math.floor(Math.random() * m--);
+			// And swap it with the current element.
+			t = arr[m];
+			arr[m] = arr[i];
+			arr[i] = t;
+		}
+		return arr;
+	}
+}])
 .controller('NavController', ['$scope', 'Auth', function($scope, Auth) {
 	$scope.signout = function() {
 		Auth.removeToken();
