@@ -26,6 +26,7 @@ app.use(function (err, req, res, next) {
   }
 });
 
+app.use('/api/templates', require('./controllers/templates'));
 app.use('/api/customers', require('./controllers/customers'));
 
 app.post('/api/auth', function(req, res) {
