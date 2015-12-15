@@ -53,3 +53,29 @@ li {
 	background: #000000;
 	color: #FFFFFF;
 }
+
+.col-xs-5,
+.col-xs-7 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.contact-title {
+	font-weight: 700;
+	font-size: 72px;
+}
+
+.contact-information {
+	font-weight: 300;
+	font-size: 36px;
+	padding-bottom: 20px;
+}
+
+i {
+	padding-bottom: 25px;
+}
+
+span {
+	font-size: 27px;
+	opacity: 0.6;
+}

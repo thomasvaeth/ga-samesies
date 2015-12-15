@@ -10,7 +10,12 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-.home-1,
+.landing {
+	height: 600px;
+	color: #FFFFFF;
+	padding-top: 40px;
+}
+
 .home-2,
 .home-3,
 .home-4 {
@@ -23,12 +28,9 @@ body {
 
 /* Home - Landing */
 .home-1 {
-	height: 600px;
-	border: 1px solid #FFFFFF;
 	background: #DD5E89;
 	background: -webkit-linear-gradient(to bottom left, #DD5E89, #F7BB97);
 	background: linear-gradient(to bottom left, #DD5E89, #F7BB97);
-	color: #FFFFFF;  
 }
 
 .landing-title {
@@ -76,4 +78,14 @@ body {
 	background: #FFFFFF;
 	background: url('../images/homepage.jpg') center center no-repeat;
 	background-size: cover;
+}
+
+/* Templates - Landing */
+.templates-1 {
+	background: #267871;
+}
+
+/* About - Landing */
+.about-1 {
+	background: #3498BD;
 }

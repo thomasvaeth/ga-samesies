@@ -1,25 +1,11 @@
 <!-- Div for each product? Another div for checkout? -->
 <!-- Landing -->
-<div class="templates-1">
-
+<div class="landing templates-1">
+	<div ng-include="'app/views/navbar.html'"></div>
 </div>
 <!-- Products -->
 <div class="templates-2">
 
 </div>
 <!-- Contact same on every page -->
-<div class="templates-3">
-	<p class="title">Contact</p>
-	<p class="information">Vestibulum posuere aliquet tellus, ut interdum erat feugiat nec. Integer pellentesque consequat.</p>
-	<div class="row">
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<i class="fa fa-envelope-o"></i>
-			<i class="fa fa-map-marker"></i>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<i class="fa fa-github"></i>
-			<i class="fa fa-linkedin"></i>
-			<i class="fa fa-twitter"></i>
-		</div>
-	</div>
-</div>
+<div ng-include="'app/views/contact.html'"></div>
