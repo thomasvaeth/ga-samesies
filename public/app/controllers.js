@@ -1,10 +1,10 @@
 angular.module('SamesiesControllers', ['CustomerServices'])
 .controller('NavController', ['$scope', 'Auth', function($scope, Auth) {
-	$scope.logout = function() {
+	$scope.signout = function() {
 		Auth.removeToken();
 	};
 }])
-.controller('LoginController', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
+.controller('SigninController', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
 	$scope.customer = {
 		email: "",
 		password: ""

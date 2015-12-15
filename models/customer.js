@@ -1,11 +1,39 @@
 var mongoose = require('mongoose');
+var validate = require('mongoose-validator');
 var bcrypt = require('bcrypt');
 
+var passwordValidator = [
+	validate({
+		validator: 'isLength',
+		arguments: [8, 99]
+	})
+];
+
+var emailValidator = [
+	validate({
+		validator: 'isEmail'
+	})
+];
+
 var CustomerSchema = mongoose.Schema({
-	firstName: String,
-	lastName: String,
-	email: String,
-	password: String
+	firstName: {
+		type: String,
+		required: true
+	},
+	lastName: {
+		type: String,
+		required: true
+	},
+	email: {
+		type: String,
+		required: true,
+		validate: emailValidator
+	},
+	password: {
+		type: String,
+		required: true,
+		validate: passwordValidator
+	}
 });
 
 CustomerSchema.set('toJSON', {

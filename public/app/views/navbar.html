@@ -6,8 +6,8 @@
 		<a href="/templates" class="nav-page"><li>Work</li></a>
 		<a href="/about" class="nav-page"><li>About</li></a>
 		<a href="#" scroll-to="contact" class="nav-page">Contact</a>
-		<a href="/signup" class="nav-page"><li>Sign Up</li></a>
-		<a href="/signin" class="nav-page"><li>Sign In</li></a>
+		<a href="/signup" class="nav-page" ng-hide="isSignedIn()"><li>Sign Up</li></a>
+		<a href="/signin" class="nav-page" ng-hide="isSignedIn()"><li>Sign In</li></a>
 		<a href="" class="nav-page" ng-show="isSignedIn()" ng-click="signout()"><li>Sign Out</li></a>
 	</div>
 </div>

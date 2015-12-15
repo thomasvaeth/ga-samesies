@@ -10,7 +10,7 @@ angular.module('CustomerServices', ['ngResource'])
 		removeToken: function() {
 			$window.localStorage.removeItem('secretrecipes-token');
 		},
-		isLoggedIn: function() {
+		isSignedIn: function() {
 			var token = this.getToken();
 			return token ? true : false;
 		}

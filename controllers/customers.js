@@ -11,7 +11,7 @@ router.route('/')
 })
 .post(function(req, res) {
 	Customer.find({email: req.body.email}, function(err, customer) {
-		if (customer.length >= 1) {
+		if (customer.length > 0) {
 			return res.send({message: 'That email address is already registered.'});
 		} else {
 			Customer.create(req.body, function(err, customer) {

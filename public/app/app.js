@@ -16,7 +16,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 	})
 	.when('/signin', {
 		templateUrl: 'app/views/signin.html',
-		controller: 'LoginController'
+		controller: 'SigninController'
 	})
 	.otherwise({
 		templateUrl: 'app/views/404.html'
