@@ -1,5 +1,5 @@
 var express = require('express');
-var Sweater = require('../models/template');
+var Template = require('../models/template');
 var router = express.Router();
 
 router.route('/')

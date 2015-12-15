@@ -1,0 +1,5 @@
+{
+	"undefined": "mongodb://localhost/templates",
+	"dev": "mongodb://localhost/templates",
+	"prod": "mongodb://localhost/templates"
+}
