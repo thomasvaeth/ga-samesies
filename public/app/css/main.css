@@ -7,14 +7,18 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	font-family: 'Lato', sans-serif;
 }
 
 .home-1,
 .home-2,
 .home-3,
 .home-4 {
-	height: 550px;
 	padding-top: 40px;
+}
+
+.content {
+	padding-left: 50px;
 }
 
 /* Home - Landing */
@@ -27,8 +31,31 @@ body {
 	color: #FFFFFF;  
 }
 
+.landing-title {
+	font-weight: 900;
+	font-size: 108px;
+}
+
+.landing-information {
+	font-weight: 400;
+	font-size: 45px;
+}
+
+.btn,
+.btn:focus,
+.btn:hover,
+.btn:active:focus {
+	font-weight: 400;
+	background-color: rgba(0, 0, 0, 0);
+	border: 3px solid #FFFFFF;
+  color: #FFFFFF;
+  box-shadow: none;
+  outline: none;
+}
+
 /* Home - Store links */
 .home-2 {
+	height: 550px;
 	border: 1px solid #FFFFFF;
 	background: #FFFFFF;
 	color: #000000;
@@ -36,6 +63,7 @@ body {
 
 /* Home - Quote*/
 .home-3 {
+	height: 550px;
 	border: 1px solid #000000;
 	background: #000000;
 	color: #FFFFFF;
@@ -48,26 +76,4 @@ body {
 	background: #FFFFFF;
 	background: url('../images/homepage.jpg') center center no-repeat;
 	background-size: cover;
-}
-
-.landing-title {
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
-	font-size: 108px;
-	margin-left: 10px;
-}
-
-.landing-information {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	font-size: 45px;
-	margin-left: 10px;
-}
-
-.btn {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	background-color: rgba(0, 0, 0, 0);
-	border: 3px solid #FFFFFF;
-	margin-left: 10px;
 }

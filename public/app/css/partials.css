@@ -10,11 +10,13 @@
 
 #left {
 	float: left;
+	padding-left: 35px;
 }
 
 #right {
 	float: right;
-	margin-top: 40px;
+	padding-top: 40px;
+	padding-right: 35px;
 	opacity: 0.6;
 }
 
@@ -25,8 +27,8 @@ a:active,
 a:visited {
 	display: inline-block;
 	text-decoration: none;
-	padding: 0 10px;
-	color: white;
+	padding: 0 15px;
+	color: #FFFFFF;
 }
 
 li {
@@ -39,7 +41,6 @@ li {
 }
 
 .nav-page {
-	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-size: 27px;
 }
