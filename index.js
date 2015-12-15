@@ -20,7 +20,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/customers', expressJWT({secret: secret})
 .unless({path: ['/api/customers'], method: 'post'}));
 
-
 app.use(function (err, req, res, next) {
   if (err.name === 'UnauthorizedError') {
     res.status(401).send({message: 'You need an authorization token to view this information.'})
