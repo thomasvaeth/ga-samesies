@@ -8,7 +8,7 @@ var port = process.env.PORT || 3000;
 var secret = process.env.SECRET;
 
 var Customer = require('./models/customer');
-// mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/customers');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/customers');
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
