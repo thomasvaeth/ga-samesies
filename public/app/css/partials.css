@@ -17,14 +17,26 @@
 	float: right;
 	padding-top: 40px;
 	padding-right: 35px;
+}
+
+#right a {
 	opacity: 0.6;
 }
 
-a,
-a:link,
-a:hover,
-a:active,
-a:visited {
+#right a:hover {
+	opacity: 1;
+}
+
+#left a,
+#left a:link,
+#left a:hover,
+#left a:active,
+#left a:visited,
+#right a,
+#right a:link,
+#right a:hover,
+#right a:active,
+#right a:visited {
 	display: inline-block;
 	text-decoration: none;
 	padding: 0 15px;
@@ -75,7 +87,22 @@ i {
 	padding-bottom: 25px;
 }
 
+#contact a,
+#contact a:link,
+#contact a:hover,
+#contact a:active,
+#contact a:visited {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 15px;
+	color: #FFFFFF;
+}
+
 span {
 	font-size: 27px;
 	opacity: 0.6;
+}
+
+span:hover {
+	opacity: 1;
 }

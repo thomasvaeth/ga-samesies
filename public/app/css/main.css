@@ -23,7 +23,12 @@ body {
 }
 
 .content {
+	padding-top: 20px;
 	padding-left: 50px;
+}
+
+button {
+	margin-top: 30px;
 }
 
 /* Home - Landing */
@@ -55,6 +60,11 @@ body {
   outline: none;
 }
 
+.home-1 a,
+.home-1 a:link {
+	padding: 0;
+}
+
 /* Home - Store links */
 .home-2 {
 	height: 550px;
@@ -71,11 +81,21 @@ body {
 	color: #FFFFFF;
 }
 
+.quote-title {
+	font-weight: 700;
+	font-size: 72px;
+	margin-top: 25px;
+}
+
+.quote-information {
+	font-weight: 300;
+	font-size: 36px;
+	margin-top: 20px;
+}
+
 /* Home - Picture*/
 .home-4 {
 	height: 700px;
-	border: 1px solid #000000;
-	background: #FFFFFF;
 	background: url('../images/homepage.jpg') center center no-repeat;
 	background-size: cover;
 }
@@ -88,4 +108,16 @@ body {
 /* About - Landing */
 .about-1 {
 	background: #3498BD;
+}
+
+.about-2 {
+	height: 700px;
+	background: url('../images/about-1.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.about-4 {
+	height: 700px;
+	background: url('../images/about-2.jpg') center center no-repeat;
+	background-size: cover;
 }
