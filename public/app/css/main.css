@@ -12,88 +12,42 @@ body {
 .home-1,
 .home-2,
 .home-3,
-.home-4,
-.home-5 {
+.home-4 {
 	height: 550px;
-	transform: skewY(-2deg);
+	padding-top: 40px;
 }
 
-.un-skew {
-	transform: skewY(2deg);
-	margin-top: 50px;
-}
-
+/* Home - Landing */
 .home-1 {
+	height: 600px;
 	border: 1px solid #FFFFFF;
-	margin-top: -2%;
 	background: #DD5E89;
 	background: -webkit-linear-gradient(to bottom left, #DD5E89, #F7BB97);
 	background: linear-gradient(to bottom left, #DD5E89, #F7BB97);
 	color: #FFFFFF;  
 }
 
+/* Home - Store links */
 .home-2 {
 	border: 1px solid #FFFFFF;
 	background: #FFFFFF;
 	color: #000000;
 }
 
-.home-4 {
-	border: 1px solid #000000;
-	background: #FFFFFF;
-	color: #000000;
-}
-
-.home-3,
-.home-5 {
+/* Home - Quote*/
+.home-3 {
 	border: 1px solid #000000;
 	background: #000000;
 	color: #FFFFFF;
 }
 
-#menu {
-	height: 150px;
-}
-
-#left,
-#right {
-	display: inline-block;
-}
-
-#left {
-	float: left;
-}
-
-#right {
-	float: right;
-	margin-top: 40px;
-	opacity: 0.6;
-}
-
-a,
-a:link,
-a:hover,
-a:active,
-a:visited {
-	display: inline-block;
-	text-decoration: none;
-	padding: 0 10px;
-	color: white;
-}
-
-li {
-	list-style-type: none;
-}
-
-.nav-title {
-	font-family: 'Londrina Outline', cursive;
-	font-size: 72px;
-}
-
-.nav-page {
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	font-size: 27px;
+/* Home - Picture*/
+.home-4 {
+	height: 700px;
+	border: 1px solid #000000;
+	background: #FFFFFF;
+	background: url('../images/homepage.jpg') center center no-repeat;
+	background-size: cover;
 }
 
 .landing-title {
@@ -116,9 +70,4 @@ li {
 	background-color: rgba(0, 0, 0, 0);
 	border: 3px solid #FFFFFF;
 	margin-left: 10px;
-}
-
-.home-4 {
-	background: url('../images/homepage.jpg') center center no-repeat;
-	background-size: cover;
 }

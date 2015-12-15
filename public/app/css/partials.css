@@ -1,0 +1,54 @@
+/* Navigation */
+#menu {
+	height: 150px;
+}
+
+#left,
+#right {
+	display: inline-block;
+}
+
+#left {
+	float: left;
+}
+
+#right {
+	float: right;
+	margin-top: 40px;
+	opacity: 0.6;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 10px;
+	color: white;
+}
+
+li {
+	list-style-type: none;
+}
+
+.nav-title {
+	font-family: 'Londrina Outline', cursive;
+	font-size: 72px;
+}
+
+.nav-page {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 27px;
+}
+
+/* Contact */
+#contact {
+	height: 575px;
+	padding-top: 40px;
+	border: 1px solid #000000;
+	background: #000000;
+	color: #FFFFFF;
+}
