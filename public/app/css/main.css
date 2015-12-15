@@ -131,12 +131,16 @@ button {
 
 /* Templates - Landing */
 .templates-1 {
-	background: #267871;
+	background: #136A8A;
+	background: -webkit-linear-gradient(to bottom left, #136A8A, #267871);
+	background: linear-gradient(to bottom left, #136A8A, #267871);
 }
 
 /* About - Landing */
 .about-1 {
-	background: #3498BD;
+	background: #2C3E50;
+	background: -webkit-linear-gradient(to bottom left, #2C3E50, #3498BD);
+	background: linear-gradient(to bottom left, #2C3E50, #3498BD);
 }
 
 /* About - Picture */
