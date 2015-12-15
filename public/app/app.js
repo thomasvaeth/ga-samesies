@@ -12,7 +12,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		templateUrl: 'app/views/about.html'
 	})
 	.when('/signup', {
-		templateUrl: 'app/views/signup.html'
+		templateUrl: 'app/views/signup.html',
+		controller: 'SignupController'
 	})
 	.when('/signin', {
 		templateUrl: 'app/views/signin.html',

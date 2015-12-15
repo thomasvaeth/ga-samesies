@@ -4,10 +4,31 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 		Auth.removeToken();
 	};
 }])
+.controller('SignupController', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
+	$scope.customer = {
+		firstName: '',
+		lastName: '',
+		email: '',
+		password: ''
+	};
+
+	$scope.signup = function() {
+		$http.post('/api/customers', $scope.customer).then(function success(res) {
+			$http.post('/api/auth', $scope.customer).then(function success(res) {
+				Auth.saveToken(res.data.token);
+				$location.path('/');
+			}, function error(res) {
+				console.log(res);
+			});
+		}, function error(res) {
+			console.log(res);
+		});
+	}
+}])
 .controller('SigninController', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
 	$scope.customer = {
-		email: "",
-		password: ""
+		email: '',
+		password: ''
 	};
 
 	$scope.signin = function() {
