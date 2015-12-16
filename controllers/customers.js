@@ -10,20 +10,16 @@ router.route('/')
 	});
 })
 .post(function(req, res) {
-	// if (req.body.password === req.body.passwordConfirm) {
-		Customer.find({email: req.body.email}, function(err, customer) {
-			if (customer.length > 0) {
-				return res.send({message: 'That email address is already registered.'});
-			} else {
-				Customer.create(req.body, function(err, customer) {
-					if (err) return res.status(500).send(err);
-					res.send(customer);
-				});
-			}
-		});
-	// } else {
-	// 	return res.send({message: 'The passwords do not match.'});
-	// }
+	Customer.find({email: req.body.email}, function(err, customer) {
+		if (customer.length > 0) {
+			return res.status(500).send({message: 'That email address is already registered.'});
+		} else {
+			Customer.create(req.body, function(err, customer) {
+				if (err) return res.status(500).send(err);
+				res.send(customer);
+			});
+		}
+	});
 });
 
 router.get('/:id', function(req, res) {

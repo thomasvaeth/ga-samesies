@@ -27,8 +27,8 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 .controller('NavController', ['$scope', '$location', 'Auth', 'Alerts', function($scope, $location, Auth, Alerts) {
 	$scope.signout = function() {
 		Auth.removeToken();
-		Alerts.add('success', 'You have successfully logged out');
-		$location.path('/')
+		$location.path('/');
+		Alerts.add('success', 'You have successfully logged out.');
 	}
 }])
 .controller('SignupController', ['$scope', '$http', '$location', 'Auth', 'Alerts', function($scope, $http, $location, Auth, Alerts) {
@@ -42,9 +42,13 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 	$scope.signup = function() {
 		$http.post('/api/customers', $scope.customer).then(function success(res) {
 			$http.post('/api/auth', $scope.customer).then(function success(res) {
-				Auth.saveToken(res.data.token);
-				Alerts.add('success', 'You have successfully signed up and logged in');
-				$location.path('/');
+				if (res.data.token) {
+					Auth.saveToken(res.data.token);
+					$location.path('/');
+				} else {
+					Alerts.add('danger', 'A user previously signed up with that email address.');
+					$location.path('/signup');
+				}
 			}, function error(res) {
 				Alerts.add('danger', error.data.message);
 				console.log(res);
@@ -65,10 +69,9 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 		$http.post('/api/auth', $scope.customer).then(function success(res) {
 			if (res.data.token) {
 				Auth.saveToken(res.data.token);
-				Alerts.add('success', 'You have successfully logged in');
 				$location.path('/');
 			} else {
-				Alerts.add('danger', 'Something something something.');
+				Alerts.add('danger', 'Incorrect email or password.');
 				$location.path('/signin');
 			}
 		}, function error(res) {
