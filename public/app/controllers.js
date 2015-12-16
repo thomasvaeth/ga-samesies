@@ -24,11 +24,10 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 		return arr;
 	}
 }])
-.controller('NavController', ['$scope', '$location', 'Auth', 'Alerts', function($scope, $location, Auth, Alerts) {
+.controller('NavController', ['$scope', '$location', 'Auth', function($scope, $location, Auth) {
 	$scope.signout = function() {
 		Auth.removeToken();
 		$location.path('/');
-		Alerts.add('success', 'You have successfully logged out.');
 	}
 }])
 .controller('SignupController', ['$scope', '$http', '$location', 'Auth', 'Alerts', function($scope, $http, $location, Auth, Alerts) {
@@ -50,11 +49,11 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 					$location.path('/signup');
 				}
 			}, function error(res) {
-				Alerts.add('danger', error.data.message);
+				Alerts.add('danger', res.data.message);
 				console.log(res);
 			});
 		}, function error(res) {
-			Alerts.add('danger', error.data.message);
+			Alerts.add('danger', res.data.message);
 			console.log(res);
 		});
 	}

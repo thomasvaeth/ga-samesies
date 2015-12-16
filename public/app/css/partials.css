@@ -109,8 +109,10 @@ span:hover {
 
 /* Alert */
 .alerts-container {
-	position: absolute;
+	position: fixed;
 	width: inherit;
+	top: 0;
+	right: 0;
 }
 
 .close {
