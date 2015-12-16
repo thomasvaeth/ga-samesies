@@ -50,10 +50,6 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 			console.log(res);
 		});
 	}
-
-	$scope.previous = function() {
-		window.history.back();
-	}
 }])
 .controller('SigninController', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
 	$scope.customer = {
@@ -69,7 +65,8 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 			console.log(res.data);
 		});
 	}
-
+}])
+.controller('BackController', ['$scope', function($scope) {
 	$scope.previous = function() {
 		window.history.back();
 	}
