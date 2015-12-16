@@ -5,6 +5,7 @@
   display: table;
   height: 100%;
   width: 100%;
+  color: #FFFFFF;
 }
 
 .site-wrapper-inner {
@@ -14,6 +15,18 @@
 
 .cover-container {
   margin: 0 auto;
+}
+
+.user-title {
+  font-weight: 700;
+  font-size: 72px;
+  margin-top: -25px;
+}
+
+.user-information {
+  font-weight: 300;
+  font-size: 36px;
+  margin-top: 10px;
 }
 
 label {

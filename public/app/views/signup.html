@@ -1,37 +1,50 @@
 <div class="site-wrapper">
 	<div class="site-wrapper-inner">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+				<p class="user-title">Sign Up</p>
+				<p class="user-information">Quisque sagittis, augue non elementum sollicitudin, ante orci.</p>
+			</div>
+		</div>
 		<div class="cover-container">
 			<form ng-submit="signup()">
 				<div class="row">
 					<div class="col-xs-3 col-xs-offset-3">
 						<div class="form-group">
 							<label for="firstName">Name</label>
-							<input type="text" class="form-control input-lg" id="firstName" placeholder="First Name" autocomplete="off" ng-model="customer.firstName" required>
+							<input type="text" class="form-control input-lg"placeholder="First" autocomplete="off" ng-model="customer.firstName" required>
 						</div>		
 					</div>
 					<div class="col-xs-3">
 						<div class="form-group">
 							<label for="lastName">&nbsp;</label>
-							<input type="text" class="form-control input-lg" id="lastName" placeholder="Last Name" autocomplete="off" ng-model="customer.lastName" required>
+							<input type="text" class="form-control input-lg"placeholder="Last" autocomplete="off" ng-model="customer.lastName" required>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-6 col-xs-offset-3">
 						<div class="form-group">
-							<label for="email">Email</label>
-							<input type="email" class="form-control input-lg" id="email" placeholder="Email" autocomplete="off" ng-model="customer.email" required>
+							<label for="email">Email address</label>
+							<input type="email" class="form-control input-lg" placeholder="Email" autocomplete="off" ng-model="customer.email" required>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-6 col-xs-offset-3">
 						<div class="form-group">
-							<label for="password">Password</label>
-							<input type="password" class="form-control input-lg" id="password" placeholder="Password" minlength="8" maxlength="99" autocomplete="off" ng-model="customer.password" required>
+							<label for="password">Create a password</label>
+							<input type="password" class="form-control input-lg" placeholder="Password (8 character minimum)" minlength="8" maxlength="99" autocomplete="off" ng-model="customer.password" required>
 						</div>
 					</div>
 				</div>
+<!-- 				<div class="row">
+					<div class="col-xs-6 col-xs-offset-3">
+						<div class="form-group">
+							<input type="password" class="form-control input-lg" placeholder="Confirm Password" minlength="8" maxlength="99" autocomplete="off" ng-model="customer.passwordConfirm" required>
+						</div>
+					</div>
+				</div> -->
 				<div class="row">
 					<div class="col-xs-6 col-xs-offset-3">
 						<button type="submit" class="btn btn-lg user-submit">Sign Up</button>
