@@ -106,3 +106,12 @@ span {
 span:hover {
 	opacity: 1;
 }
+
+/* Alert */
+.alerts-container {
+	width: inherit;
+}
+
+.close {
+	display: none;
+}

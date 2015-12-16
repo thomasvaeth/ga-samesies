@@ -24,13 +24,14 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 		return arr;
 	}
 }])
-.controller('NavController', ['$scope', '$location', 'Auth', function($scope, $location, Auth) {
+.controller('NavController', ['$scope', '$location', 'Auth', 'Alerts', function($scope, $location, Auth, Alerts) {
 	$scope.signout = function() {
 		Auth.removeToken();
+		Alerts.add('success', 'You have successfully logged out');
 		$location.path('/')
 	}
 }])
-.controller('SignupController', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
+.controller('SignupController', ['$scope', '$http', '$location', 'Auth', 'Alerts', function($scope, $http, $location, Auth, Alerts) {
 	$scope.customer = {
 		firstName: '',
 		lastName: '',
@@ -42,16 +43,19 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 		$http.post('/api/customers', $scope.customer).then(function success(res) {
 			$http.post('/api/auth', $scope.customer).then(function success(res) {
 				Auth.saveToken(res.data.token);
+				Alerts.add('success', 'You have successfully signed up and logged in');
 				$location.path('/');
 			}, function error(res) {
+				Alerts.add('danger', error.data.message);
 				console.log(res);
 			});
 		}, function error(res) {
+			Alerts.add('danger', error.data.message);
 			console.log(res);
 		});
 	}
 }])
-.controller('SigninController', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
+.controller('SigninController', ['$scope', '$http', '$location', 'Auth', 'Alerts', function($scope, $http, $location, Auth, Alerts) {
 	$scope.customer = {
 		email: '',
 		password: ''
@@ -59,9 +63,16 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 
 	$scope.signin = function() {
 		$http.post('/api/auth', $scope.customer).then(function success(res) {
-			Auth.saveToken(res.data.token);
-			$location.path('/');
+			if (res.data.token) {
+				Auth.saveToken(res.data.token);
+				Alerts.add('success', 'You have successfully logged in');
+				$location.path('/');
+			} else {
+				Alerts.add('danger', 'Something something something.');
+				$location.path('/signin');
+			}
 		}, function error(res) {
+			Alerts.add('danger', error.data.message);
 			console.log(res.data);
 		});
 	}
@@ -70,4 +81,11 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 	$scope.previous = function() {
 		window.history.back();
 	}
+}])
+.controller('AlertController', ['$scope', 'Alerts', function($scope, Alerts) {
+  $scope.alerts = Alerts.get();
+
+  $scope.closeAlert = function(idx) {
+    Alerts.remove(idx);
+  };
 }]);
