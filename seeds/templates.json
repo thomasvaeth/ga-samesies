@@ -1,18 +1,18 @@
 [
 {
 	"name": "Coming Soon",
-	"description": "",
-	"mobile": "",
-	"desktop": "",
+	"description": "This is the coming soon template.",
+	"mobile": "app/images/coming-iphone.png",
+	"desktop": "app/images/coming-imac.png",
 	"freeLink": "https://github.com/thomasvaeth/samesies-coming/archive/master.zip",
-	"paidLink": ""
+	"paidLink": "https://github.com/thomasvaeth/samesies-coming/archive/master.zip"
 },
 {
 	"name": "Profile",
-	"description": "",
-	"mobile": "",
-	"desktop": "",
+	"description": "This is the profile template.",
+	"mobile": "app/images/profile-iphone.png",
+	"desktop": "app/images/profile-imac.png",
 	"freeLink": "https://github.com/thomasvaeth/samesies-profile/archive/master.zip",
-	"paidLink": ""
+	"paidLink": "https://github.com/thomasvaeth/samesies-profile/archive/master.zip"
 }
 ]
