@@ -1,4 +1,4 @@
-var app = angular.module('SamesiesApplication', ['ngRoute', 'CustomerServices', 'SamesiesControllers', 'smoothScroll']);
+var app = angular.module('SamesiesApplication', ['ngRoute', 'ngAnimate', 'CustomerServices', 'SamesiesControllers', 'smoothScroll']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider

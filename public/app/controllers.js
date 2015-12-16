@@ -24,10 +24,11 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 		return arr;
 	}
 }])
-.controller('NavController', ['$scope', 'Auth', function($scope, Auth) {
+.controller('NavController', ['$scope', '$location', 'Auth', function($scope, $location, Auth) {
 	$scope.signout = function() {
 		Auth.removeToken();
-	};
+		$location.path('/')
+	}
 }])
 .controller('SignupController', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
 	$scope.customer = {
@@ -49,6 +50,10 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 			console.log(res);
 		});
 	}
+
+	$scope.previous = function() {
+		window.history.back();
+	}
 }])
 .controller('SigninController', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
 	$scope.customer = {
@@ -63,5 +68,9 @@ angular.module('SamesiesControllers', ['CustomerServices'])
 		}, function error(res) {
 			console.log(res.data);
 		});
-	};
+	}
+
+	$scope.previous = function() {
+		window.history.back();
+	}
 }]);
