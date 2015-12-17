@@ -1,10 +1,9 @@
-<!-- Div for each product? Another div for checkout? -->
 <!-- Landing -->
 <div class="landing templates-1">
 	<div ng-include="'app/views/navbar.html'"></div>
 	<div class="content">
 		<div class="landing-title">Downloads</div>
-		<div class="landing-information">Nam ultricies semper aliquam. Etiam libero orci, commodo et vehicula a, mollis ac mi. Nam non.</div>
+		<div class="landing-information">All of our templates come with instructions to change whatever you want changed.</div>
 	</div>
 </div>
 <!-- Products -->
@@ -12,7 +11,7 @@
 	<div class="content">
 		<p class="template-title" id="{{ template._id }}">{{ template.name }} Template</p>
 		<img ng-src="{{ template.desktop }}" class="center-block">
-		<p class="template-information">Sed fringilla ex id lacus commodo sodales. Curabitur eu pharetra tortor. Suspendisse quam purus, convallis eget eros eu, auctor commodo velit. Pellentesque vitae malesuada nunc. Aliquam maximus nunc.</p>
+		<p class="template-information">{{ template.description }}</p>
 		<a ng-href="{{ template.preview }}" target="_blank"><button class="btn btn-lg preview">Live Preview</button></a>
 		<div ng-hide="isSignedIn()" ng-include="'app/views/paypal.html'"></div>
 		<div ng-show="isSignedIn()"><a ng-href="{{ template.freeLink }}"><button class="btn btn-lg download">Download For Free</button></a></div>

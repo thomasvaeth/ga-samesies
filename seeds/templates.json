@@ -1,7 +1,7 @@
 [
 {
 	"name": "Coming Soon",
-	"description": "This is the coming soon template.",
+	"description": "The coming soon template is a single landing page with a countdown clock. This template was built on the Bootstrap framework with HTML, CSS, JavaScript, Google Fonts, and Font Awesome.",
 	"mobile": "app/images/coming-phone.png",
 	"desktop": "app/images/coming-mac.png",
 	"preview": "http://thomasvaeth.github.io/samesies-coming/",
@@ -10,7 +10,7 @@
 },
 {
 	"name": "Profile",
-	"description": "This is the profile template.",
+	"description": "The profile template is a single landing page for redirecting visitors to your social media accounts. This template was built on the Bootstrap framework with HTML, CSS, Animate.CSS, and Google Fonts.",
 	"mobile": "app/images/profile-phone.png",
 	"desktop": "app/images/profile-mac.png",
 	"preview": "http://thomasvaeth.github.io/samesies-profile/",
@@ -19,7 +19,7 @@
 },
 {
 	"name": "Slider",
-	"description": "This is the slider template.",
+	"description": "The slider template is a single landing page with a carousel. The template can be added in to an existing project. This template was built on the Bootstrap framework with HTML, CSS, and JavaScript.",
 	"mobile": "app/images/slider-phone.png",
 	"desktop": "app/images/slider-mac.png",
 	"preview": "http://thomasvaeth.github.io/samesies-slider/",
