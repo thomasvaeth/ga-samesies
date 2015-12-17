@@ -156,7 +156,7 @@ button {
 .template-title {
 	font-weight: 700;
 	font-size: 72px;
-	margin-top: 25px;
+	margin-top: 15px;
 }
 
 .template-information {
@@ -172,9 +172,21 @@ button {
   color: #000000;
 }
 
-.templates-2 .btn:hover {
+.download,
+.download:focus,
+.download:active:focus {
+	margin: 0;
+	border: 3px solid #000000;
+  color: #000000;
+}
+
+.download:hover {
 	background-color: #000000;
 	color: #FFFFFF;
+}
+
+.preview {
+	margin: 5px 0;
 }
 
 /* About - Landing */
