@@ -14,17 +14,7 @@
 }
 
 #right {
-	float: right;
-	padding-top: 40px;
-	padding-right: 35px;
-}
-
-#right a {
-	opacity: 0.6;
-}
-
-#right a:hover {
-	opacity: 1;
+	display: none;
 }
 
 #left a,
@@ -107,14 +97,32 @@ span:hover {
 	opacity: 1;
 }
 
-/* Alert */
-.alerts-container {
-	position: fixed;
-	width: inherit;
-	top: 0;
-	right: 0;
-}
+@media (min-width: 768px) {
+	/* Navigation */
+	#right {
+		display: inline-block;
+		float: right;
+		padding-top: 40px;
+		padding-right: 35px;
+	}
 
-.close {
-	display: none;
+	#right a {
+		opacity: 0.6;
+	}
+
+	#right a:hover {
+		opacity: 1;
+	}
+
+	/* Alert */
+	.alerts-container {
+		position: fixed;
+		width: inherit;
+		top: 0;
+		right: 0;
+	}
+
+	.close {
+		display: none;
+	}
 }

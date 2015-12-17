@@ -95,10 +95,8 @@ button {
   color: #000000;
 }
 
-.resized-picture {
-	max-width: 300px;
-	float: right;
-	margin-right: 50px;
+.picture-container {
+	display: none;
 }
 
 /* Home - Quote*/
@@ -130,9 +128,7 @@ button {
 
 /* Home - Picture */
 .home-4 {
-	height: 700px;
-	background: url('../images/homepage.jpg') center center no-repeat;
-	background-size: cover;
+	display: none;
 }
 
 /* Templates - Landing */
@@ -227,28 +223,49 @@ button {
 	background-size: cover;
 }
 
-/* ngAnimate */
-.slideup {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-}
-.slideup.ng-enter,
-.slideup.ng-leave {
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-}
-.slideup.ng-enter {
-    top: 100%;
-}
-.slideup.ng-enter-active {
-    top: 0;
-}
-.slideup.ng-leave {
-    top: 0;
-}
-.slideup.ng-leave-active {
-    top: -100%;
+@media (min-width: 768px) {
+	/* Home - Store links */
+	.picture-container {
+		display: block;
+	}
+
+	.resized-picture {
+		max-width: 300px;
+		float: right;
+		margin-right: 50px;
+	}
+
+	/* Home - Picture */
+	.home-4 {
+		display: block;
+		height: 700px;
+		background: url('../images/homepage.jpg') center center no-repeat;
+		background-size: cover;
+	}
+
+	/* ngAnimate */
+	.slideup {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    height: 100%;
+	}
+	.slideup.ng-enter,
+	.slideup.ng-leave {
+	    -webkit-transition: all 1s ease;
+	    transition: all 1s ease;
+	}
+	.slideup.ng-enter {
+	    top: 100%;
+	}
+	.slideup.ng-enter-active {
+	    top: 0;
+	}
+	.slideup.ng-leave {
+	    top: 0;
+	}
+	.slideup.ng-leave-active {
+	    top: -100%;
+	}
 }
