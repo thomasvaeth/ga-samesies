@@ -72,6 +72,10 @@ i {
 	padding-bottom: 10px;
 }
 
+.fa-map-marker {
+	padding-left: 8px;
+}
+
 #contact a,
 #contact a:link,
 #contact a:hover,
@@ -90,6 +94,10 @@ span {
 
 span:hover {
 	opacity: 1;
+}
+
+.location {
+	padding-left: 11px;
 }
 
 /* Alert */
