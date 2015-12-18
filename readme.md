@@ -1,4 +1,4 @@
-# Samesies
+# [Samesies](http://samesies.herokuapp.com/)
 ### About
 Samesies is an idea I had during the course of General Assembly Seattle, so I did it for the final project. I wanted to make a handful of templates and have them available to download for a small fee or for free all in once place. The templates can be found [here](https://github.com/thomasvaeth/samesies-coming), [here](https://github.com/thomasvaeth/samesies-profile), and [here](https://github.com/thomasvaeth/samesies-slider).
 
