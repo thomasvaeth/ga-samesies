@@ -21,7 +21,8 @@ I had a lot of fun making this project. I was back and forth on the idea for a c
 
 ### User Stories
 * ````As a user I can download a template and be able to know exactly what to change with no background in HTML or CSS.````
-* ````As a user I can preview the template before I download.````
+* ````As a user I can preview the template before I download it.````
+* ````As a user I can download a template and expect it to be responsive on all devices.````
 
 ### Upcoming Additions
 * Add responsive design for iPad.
