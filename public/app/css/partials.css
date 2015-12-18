@@ -1,14 +1,10 @@
 /* Navigation */
 #menu {
-	height: 150px;
-}
-
-#left,
-#right {
-	display: inline-block;
+	height: 100px;
 }
 
 #left {
+	display: inline-block;
 	float: left;
 	padding-left: 35px;
 }
@@ -97,8 +93,24 @@ span:hover {
 	opacity: 1;
 }
 
+/* Alert */
+.alerts-container {
+	position: fixed;
+	width: inherit;
+	top: 0;
+	right: 0;
+}
+
+.close {
+	display: none;
+}
+
 @media (min-width: 768px) {
 	/* Navigation */
+	#menu {
+		height: 150px;
+	}
+
 	#right {
 		display: inline-block;
 		float: right;
@@ -112,17 +124,5 @@ span:hover {
 
 	#right a:hover {
 		opacity: 1;
-	}
-
-	/* Alert */
-	.alerts-container {
-		position: fixed;
-		width: inherit;
-		top: 0;
-		right: 0;
-	}
-
-	.close {
-		display: none;
 	}
 }

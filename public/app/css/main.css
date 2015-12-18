@@ -11,19 +11,12 @@ body {
 }
 
 .landing {
-	height: 600px;
+	height: 500px;
 	color: #FFFFFF;
-	padding-top: 40px;
-}
-
-.home-2,
-.home-3,
-.home-4 {
-	padding-top: 40px;
 }
 
 .content {
-	padding: 20px 50px 0 50px;
+	padding: 20px 20px 0 20px;
 }
 
 button {
@@ -49,12 +42,12 @@ button {
 
 .landing-title {
 	font-weight: 900;
-	font-size: 108px;
+	font-size: 54px;
 }
 
 .landing-information {
 	font-weight: 400;
-	font-size: 45px;
+	font-size: 36px;
 }
 
 .landing .btn,
@@ -70,21 +63,32 @@ button {
 	padding: 0;
 }
 
+.landing-btn {
+	display: none;
+}
+
+.mobile-btn {
+	display: inline-block;
+}
+
 /* Home - Store links */
 .home-2 {
-	height: 750px;
+	height: 1050px;
 }
 
 .featured-title {
 	font-weight: 700;
-	font-size: 72px;
-	margin-top: 75px;
+	font-size: 36px;
 }
 
 .featured-information {
 	font-weight: 300;
-	font-size: 36px;
+	font-size: 27px;
 	margin-top: 20px;
+}
+
+.resized-picture {
+	max-width: 90%;
 }
 
 .home-2 .btn,
@@ -95,27 +99,21 @@ button {
   color: #000000;
 }
 
-.picture-container {
-	display: none;
-}
-
 /* Home - Quote*/
 .home-3 {
-	height: 550px;
+	height: 500px;
 	background: #000000;
 	color: #FFFFFF;
 }
 
 .quote-title {
 	font-weight: 700;
-	font-size: 72px;
-	margin-top: 20px;
+	font-size: 36px;
 }
 
 .quote-information {
 	font-weight: 300;
-	font-size: 36px;
-	margin-top: 20px;
+	font-size: 27px;
 }
 
 .home-3 .btn,
@@ -128,7 +126,9 @@ button {
 
 /* Home - Picture */
 .home-4 {
-	display: none;
+	height: 500px;
+	background: url('../images/homepage.jpg') center center no-repeat;
+	background-size: cover;
 }
 
 /* Templates - Landing */
@@ -224,9 +224,51 @@ button {
 }
 
 @media (min-width: 768px) {
+	.landing,
+	.home-2,
+	.home-3,
+	.home-4 {
+		padding-top: 40px;
+	}
+
+	.landing {
+		height: 600px;
+	}
+
+	.content {
+		padding: 20px 50px 0 50px;
+	}
+
+	/* Home - Landing */
+	.landing-title {
+		font-size: 108px;
+	}
+
+	.landing-information {
+		font-size: 45px;
+	}
+
+	.landing-btn {
+		display: inline-block;
+	}
+
+	.mobile-btn {
+		display: none;
+	}
+
 	/* Home - Store links */
-	.picture-container {
-		display: block;
+	.home-2 {
+		height: 750px;
+	}
+
+	.featured-title {
+		font-size: 72px;
+		margin-top: 75px;
+	}
+
+	.featured-information {
+		font-size: 36px;
+		margin-top: 20px;
 	}
 
 	.resized-picture {
@@ -235,12 +277,24 @@ button {
 		margin-right: 50px;
 	}
 
+	/* Home - Quote*/
+	.home-3 {
+		height: 550px;
+	}
+
 	/* Home - Picture */
 	.home-4 {
-		display: block;
 		height: 700px;
-		background: url('../images/homepage.jpg') center center no-repeat;
-		background-size: cover;
+	}
+
+	.quote-title {
+		font-size: 72px;
+		margin-top: 20px;
+	}
+	
+	.quote-information {
+		font-size: 36px;
+		margin-top: 20px;
 	}
 
 	/* ngAnimate */
