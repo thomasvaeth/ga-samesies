@@ -39,6 +39,10 @@ li {
 	font-size: 72px;
 }
 
+.nav-title:hover {
+	font-family: 'Londrina Solid', cursive;
+}
+
 .nav-page {
 	font-weight: 700;
 	font-size: 27px;
