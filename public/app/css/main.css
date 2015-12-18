@@ -10,9 +10,58 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-.landing {
-	height: 500px;
+.landing,
+.home-3,
+.download:hover {
 	color: #FFFFFF;
+}
+
+.landing .btn,
+.landing .btn:focus,
+.landing .btn:hover,
+.landing .btn:active:focus,
+.home-3 .btn,
+.home-3 .btn:focus,
+.home-3 .btn:hover,
+.home-3 .btn:active:focus {
+	color: #FFFFFF;
+	border: 3px solid #FFFFFF;
+}
+
+.featured-title,
+.quote-title,
+.templates-title,
+.template-title,
+.about-title {
+	font-weight: 700;
+}
+
+.btn,
+.btn:focus,
+.btn:hover,
+.btn:active:focus,
+.landing-information {
+	font-weight: 400;
+}
+
+.featured-information,
+.quote-information,
+.template-information,
+.about-information {
+	font-weight: 300;
+}
+
+.landing,
+.home-3,
+.home-4,
+.about-2 {
+	height: 500px;
+}
+
+.templates-title,
+.template-title,
+.about-title {
+	font-size: 72px;
 }
 
 .content {
@@ -28,7 +77,6 @@ button {
 .btn:hover,
 .btn:active:focus {
 	background-color: rgba(0, 0, 0, 0);
-	font-weight: 400;
   box-shadow: none;
   outline: none;
 }
@@ -46,16 +94,7 @@ button {
 }
 
 .landing-information {
-	font-weight: 400;
 	font-size: 36px;
-}
-
-.landing .btn,
-.landing .btn:focus,
-.landing .btn:hover,
-.landing .btn:active:focus {
-	border: 3px solid #FFFFFF;
-  color: #FFFFFF;
 }
 
 .home-1 a,
@@ -77,12 +116,10 @@ button {
 }
 
 .featured-title {
-	font-weight: 700;
 	font-size: 36px;
 }
 
 .featured-information {
-	font-weight: 300;
 	font-size: 27px;
 	margin-top: 20px;
 }
@@ -101,32 +138,19 @@ button {
 
 /* Home - Quote*/
 .home-3 {
-	height: 500px;
 	background: #000000;
-	color: #FFFFFF;
 }
 
 .quote-title {
-	font-weight: 700;
 	font-size: 36px;
 }
 
 .quote-information {
-	font-weight: 300;
 	font-size: 27px;
-}
-
-.home-3 .btn,
-.home-3 .btn:focus,
-.home-3 .btn:hover,
-.home-3 .btn:active:focus {
-	border: 3px solid #FFFFFF;
-  color: #FFFFFF;
 }
 
 /* Home - Picture */
 .home-4 {
-	height: 500px;
 	background: url('../images/homepage.jpg') center center no-repeat;
 	background-size: cover;
 }
@@ -144,19 +168,14 @@ button {
 }
 
 .templates-title {
-	font-weight: 700;
-	font-size: 72px;
 	margin-top: 25px;
 }
 
 .template-title {
-	font-weight: 700;
-	font-size: 72px;
 	margin-top: 15px;
 }
 
 .template-information {
-	font-weight: 300;
 	font-size: 36px;
 	margin-top: 20px;
 }
@@ -178,7 +197,6 @@ button {
 
 .download:hover {
 	background-color: #000000;
-	color: #FFFFFF;
 }
 
 .preview {
@@ -195,7 +213,6 @@ button {
 
 /* About - Picture */
 .about-2 {
-	height: 500px;
 	background: url('../images/about-1.jpg') center center no-repeat;
 	background-size: cover;
 }
@@ -206,13 +223,10 @@ button {
 }
 
 .about-title {
-	font-weight: 700;
-	font-size: 72px;
 	margin-top: 20px;
 }
 
 .about-information {
-	font-weight: 300;
 	font-size: 36px;
 	margin-top: 20px;
 }
