@@ -46,8 +46,6 @@ li {
 /* Contact */
 #contact {
 	height: 575px;
-	padding-top: 40px;
-	border: 1px solid #000000;
 	background: #000000;
 	color: #FFFFFF;
 }
@@ -60,17 +58,17 @@ li {
 
 .contact-title {
 	font-weight: 700;
-	font-size: 72px;
+	font-size: 36px;
 }
 
 .contact-information {
 	font-weight: 300;
-	font-size: 36px;
+	font-size: 27px;
 	padding-bottom: 20px;
 }
 
 i {
-	padding-bottom: 25px;
+	padding-bottom: 10px;
 }
 
 #contact a,
@@ -124,5 +122,25 @@ span:hover {
 
 	#right a:hover {
 		opacity: 1;
+	}
+
+	/* Contact */
+	#contact {
+		height: 575px;
+		padding-top: 40px;
+		background: #000000;
+		color: #FFFFFF;
+	}
+
+	.contact-title {
+		font-size: 72px;
+	}
+
+	.contact-information {
+		font-size: 36px;
+	}
+
+	i {
+		padding-bottom: 25px;
 	}
 }
