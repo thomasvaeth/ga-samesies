@@ -1,3 +1,8 @@
+#right,
+.close {
+	display: none;
+}
+
 /* Navigation */
 #menu {
 	height: 100px;
@@ -7,10 +12,6 @@
 	display: inline-block;
 	float: left;
 	padding-left: 35px;
-}
-
-#right {
-	display: none;
 }
 
 #left a,
@@ -97,10 +98,6 @@ span:hover {
 	width: inherit;
 	top: 0;
 	right: 0;
-}
-
-.close {
-	display: none;
 }
 
 @media (min-width: 667px) {

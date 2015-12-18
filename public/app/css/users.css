@@ -1,3 +1,20 @@
+.site-wrapper,
+label {
+  color: #FFFFFF;
+}
+
+.form-control,
+.form-control:focus,
+.user-submit,
+.user-submit:focus,
+.user-submit:hover,
+.user-submit:active:focus {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: none;
+  outline: none;
+}
+
 .site-wrapper {
   background: #232526;
   background: -webkit-linear-gradient(to top right, #232526 , #414345);
@@ -5,7 +22,6 @@
   display: table;
   height: 100%;
   width: 100%;
-  color: #FFFFFF;
 }
 
 .site-wrapper-inner {
@@ -29,17 +45,9 @@
   margin-top: 10px;
 }
 
-label {
-  color: #FFFFFF;
-}
-
 .form-control,
 .form-control:focus {
-  border: 1px solid #FFFFFF;
   background-color: rgba(0, 0, 0, 0);
-  color: #FFFFFF;
-  box-shadow: none;
-  outline: none;
 }
 
 .form-control::-webkit-input-placeholder { 
@@ -59,11 +67,7 @@ label {
 .user-submit:focus,
 .user-submit:hover,
 .user-submit:active:focus {
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
   font-weight: 400;
-  box-shadow: none;
-  outline: none;
   margin-top: 0;
   margin-bottom: 15px;
 }
