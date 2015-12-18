@@ -10,22 +10,36 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-.landing,
-.home-3,
-.download:hover {
-	color: #FFFFFF;
+.landing-btn,
+.thomas,
+.about-4 {
+	display: none;
 }
 
-.landing .btn,
-.landing .btn:focus,
-.landing .btn:hover,
-.landing .btn:active:focus,
-.home-3 .btn,
-.home-3 .btn:focus,
-.home-3 .btn:hover,
-.home-3 .btn:active:focus {
-	color: #FFFFFF;
-	border: 3px solid #FFFFFF;
+.landing,
+.home-3,
+.home-4,
+.about-2 {
+	height: 500px;
+}
+
+.templates-title,
+.template-title,
+.about-title {
+	font-size: 72px;
+}
+
+.landing-information,
+.featured-title,
+.quote-title,
+.template-information,
+.about-information {
+	font-size: 36px;
+}
+
+.featured-information,
+.quote-information {
+	font-size: 27px;
 }
 
 .featured-title,
@@ -53,15 +67,41 @@ body {
 
 .landing,
 .home-3,
-.home-4,
-.about-2 {
-	height: 500px;
+.download:hover {
+	color: #FFFFFF;
 }
 
-.templates-title,
-.template-title,
-.about-title {
-	font-size: 72px;
+.landing .btn,
+.landing .btn:focus,
+.landing .btn:hover,
+.landing .btn:active:focus,
+.home-3 .btn,
+.home-3 .btn:focus,
+.home-3 .btn:hover,
+.home-3 .btn:active:focus {
+	color: #FFFFFF;
+	border: 3px solid #FFFFFF;
+}
+
+.home-2 .btn,
+.home-2 .btn:focus,
+.home-2 .btn:hover,
+.home-2 .btn:active:focus,
+.templates-2 .btn,
+.templates-2 .btn:focus,
+.templates-2 .btn:active:focus,
+.download,
+.download:focus,
+.download:active:focus {
+	color: #000000;
+	border: 3px solid #000000;
+}
+
+.featured-information,
+.template-information,
+.about-title,
+.about-information {
+	margin-top: 20px;
 }
 
 .content {
@@ -93,17 +133,9 @@ button {
 	font-size: 54px;
 }
 
-.landing-information {
-	font-size: 36px;
-}
-
 .home-1 a,
 .home-1 a:link {
 	padding: 0;
-}
-
-.landing-btn {
-	display: none;
 }
 
 .mobile-btn {
@@ -115,38 +147,13 @@ button {
 	height: 1050px;
 }
 
-.featured-title {
-	font-size: 36px;
-}
-
-.featured-information {
-	font-size: 27px;
-	margin-top: 20px;
-}
-
 .resized-picture {
 	max-width: 90%;
-}
-
-.home-2 .btn,
-.home-2 .btn:focus,
-.home-2 .btn:hover,
-.home-2 .btn:active:focus {
-	border: 3px solid #000000;
-  color: #000000;
 }
 
 /* Home - Quote*/
 .home-3 {
 	background: #000000;
-}
-
-.quote-title {
-	font-size: 36px;
-}
-
-.quote-information {
-	font-size: 27px;
 }
 
 /* Home - Picture */
@@ -175,24 +182,10 @@ button {
 	margin-top: 15px;
 }
 
-.template-information {
-	font-size: 36px;
-	margin-top: 20px;
-}
-
-.templates-2 .btn,
-.templates-2 .btn:focus,
-.templates-2 .btn:active:focus {
-	border: 3px solid #000000;
-  color: #000000;
-}
-
 .download,
 .download:focus,
 .download:active:focus {
 	margin: 0;
-	border: 3px solid #000000;
-  color: #000000;
 }
 
 .download:hover {
@@ -222,24 +215,6 @@ button {
 	height: 800px;
 }
 
-.about-title {
-	margin-top: 20px;
-}
-
-.about-information {
-	font-size: 36px;
-	margin-top: 20px;
-}
-
-.thomas {
-	display: none;
-}
-
-/* About - Picture */
-.about-4 {
-	display: none;
-}
-
 @media (min-width: 667px) {
 	.landing {
 		height: 425px;
@@ -262,15 +237,38 @@ button {
 }
 
 @media (min-width: 768px) {
+	.thomas,
+	.about-4 {
+		display: block;
+	}
+
+	.landing,
+	.about-1 {
+		height: 600px;
+	}
+
+	.home-4,
+	.about-2,
+	.about-4 {
+		height: 700px;
+	}
+
+	.featured-title,
+	.quote-title {
+		font-size: 72px;
+	}
+
+	.featured-information,
+	.quote-information {
+		font-size: 36px;
+		margin-top: 20px;
+	}
+
 	.landing,
 	.home-2,
 	.home-3,
 	.home-4 {
 		padding-top: 40px;
-	}
-
-	.landing {
-		height: 600px;
 	}
 
 	.content {
@@ -300,13 +298,7 @@ button {
 	}
 
 	.featured-title {
-		font-size: 72px;
 		margin-top: 75px;
-	}
-
-	.featured-information {
-		font-size: 36px;
-		margin-top: 20px;
 	}
 
 	.resized-picture {
@@ -320,28 +312,8 @@ button {
 		height: 550px;
 	}
 
-	/* Home - Picture */
-	.home-4 {
-		height: 700px;
-	}
-
 	.quote-title {
-		font-size: 72px;
 		margin-top: 20px;
-	}
-	
-	.quote-information {
-		font-size: 36px;
-		margin-top: 20px;
-	}
-
-	/* About - Picture */
-	.about-1 {
-		height: 600px;
-	}
-
-	.about-2 {
-		height: 700px;
 	}
 
 	/* About - Profile */
@@ -349,14 +321,8 @@ button {
 		height: 675px;
 	}
 
-	.thomas {
-		display: block;
-	}
-
 	/* About - Picture */
 	.about-4 {
-		display: block;
-		height: 700px;
 		background: url('../images/about-2.jpg') center center no-repeat;
 		background-size: cover;
 	}
