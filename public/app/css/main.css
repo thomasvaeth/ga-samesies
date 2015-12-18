@@ -187,6 +187,7 @@ button {
 
 /* About - Landing */
 .about-1 {
+	height: 650px;
 	background: #2C3E50;
 	background: -webkit-linear-gradient(to bottom left, #2C3E50, #3498BD);
 	background: linear-gradient(to bottom left, #2C3E50, #3498BD);
@@ -194,14 +195,14 @@ button {
 
 /* About - Picture */
 .about-2 {
-	height: 700px;
+	height: 500px;
 	background: url('../images/about-1.jpg') center center no-repeat;
 	background-size: cover;
 }
 
 /* About - Profile */
 .about-3 {
-	height: 675px;
+	height: 800px;
 }
 
 .about-title {
@@ -216,11 +217,13 @@ button {
 	margin-top: 20px;
 }
 
+.thomas {
+	display: none;
+}
+
 /* About - Picture */
 .about-4 {
-	height: 700px;
-	background: url('../images/about-2.jpg') center center no-repeat;
-	background-size: cover;
+	display: none;
 }
 
 @media (min-width: 768px) {
@@ -295,6 +298,32 @@ button {
 	.quote-information {
 		font-size: 36px;
 		margin-top: 20px;
+	}
+
+	/* About - Picture */
+	.about-1 {
+		height: 600px;
+	}
+
+	.about-2 {
+		height: 700px;
+	}
+
+	/* About - Profile */
+	.about-3 {
+		height: 675px;
+	}
+
+	.thomas {
+		display: block;
+	}
+
+	/* About - Picture */
+	.about-4 {
+		display: block;
+		height: 700px;
+		background: url('../images/about-2.jpg') center center no-repeat;
+		background-size: cover;
 	}
 
 	/* ngAnimate */
