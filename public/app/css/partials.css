@@ -103,6 +103,13 @@ span:hover {
 	display: none;
 }
 
+@media (min-width: 667px) {
+	/* Contact */
+	#contact {
+		height: 475px;
+	}
+}
+
 @media (min-width: 768px) {
 	/* Navigation */
 	#menu {

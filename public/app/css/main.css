@@ -226,6 +226,27 @@ button {
 	display: none;
 }
 
+@media (min-width: 667px) {
+	.landing {
+		height: 425px;
+	}
+
+	/* Home - Store links */
+	.home-2 {
+		height: 1425px;
+	}
+
+	/* Home - Quote*/
+	.home-3 {
+		height: 325px;
+	}
+
+	/* About - Profile */
+	.about-3 {
+		height: 500px;
+	}
+}
+
 @media (min-width: 768px) {
 	.landing,
 	.home-2,
