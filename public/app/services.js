@@ -5,13 +5,13 @@ angular.module('CustomerServices', ['ngResource'])
 .factory('Auth', ['$window', function($window) {
 	return {
 		saveToken: function(token) {
-			$window.localStorage['secretrecipes-token'] = token;
+			$window.localStorage['samesies-token'] = token;
 		},
 		getToken: function() {
-			return $window.localStorage['secretrecipes-token'];
+			return $window.localStorage['samesies-token'];
 		},
 		removeToken: function() {
-			$window.localStorage.removeItem('secretrecipes-token');
+			$window.localStorage.removeItem('samesies-token');
 		},
 		isSignedIn: function() {
 			var token = this.getToken();
