@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
 
 gulp.task('concatScripts', function() {
 	gulp.src([
@@ -19,6 +20,7 @@ gulp.task('concatScripts', function() {
 gulp.task('minifyScripts', function() {
 	gulp.src('public/app/js/samesies.js'
 	).pipe(uglify()
+	).pipe(rename('samesies.min.js')
 	).pipe(gulp.dest('public/app/js')
 	);
 });
