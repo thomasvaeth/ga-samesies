@@ -8,7 +8,7 @@ var rename = require('gulp-rename');
 var maps = require('gulp-sourcemaps');
 
 gulp.task('concatStyles', function() {
-	gulp.src([
+	return gulp.src([
 		'public/app/css/ie10-viewport-bug-workaround.css',
 		'public/app/css/main.css',
 		'public/app/css/partials.css',
@@ -20,8 +20,8 @@ gulp.task('concatStyles', function() {
 	);
 });
 
-gulp.task('minifyStyles', function() {
-	gulp.src('public/app/css/samesies.css'
+gulp.task('minifyStyles', ['concatStyles'], function() {
+	return gulp.src('public/app/css/samesies.css'
 	).pipe(minifyCss({compatibility: 'ie8'})
 	).pipe(rename('samesies.min.css')
 	).pipe(gulp.dest('public/app/css')
@@ -29,7 +29,7 @@ gulp.task('minifyStyles', function() {
 });
 
 gulp.task('concatScripts', function() {
-	gulp.src([
+	return gulp.src([
 		'public/app/js/angular-validation-match.min.js',
 		'public/app/js/angular-smooth-scroll.min.js',
 		'public/app/services.js',
@@ -42,10 +42,21 @@ gulp.task('concatScripts', function() {
 	);
 });
 
-gulp.task('minifyScripts', function() {
-	gulp.src('public/app/js/samesies.js'
+gulp.task('minifyScripts', ['concatScripts'], function() {
+	return gulp.src('public/app/js/samesies.js'
 	).pipe(uglify()
 	).pipe(rename('samesies.min.js')
 	).pipe(gulp.dest('public/app/js')
 	);
 });
+
+gulp.task('build', ['minifyStyles', 'minifyScripts']);
+
+gulp.task('watch', function() {
+	gulp.watch('public/app/css/**/*.css', ['minifyStyles']);
+	gulp.watch('public/app/js/**/*.js', ['minifyScripts']);
+});
+
+gulp.task('serve', ['watch']);
+
+gulp.task('default', ['build']);
