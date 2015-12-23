@@ -1,0 +1,611 @@
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+@import url(https://fonts.googleapis.com/css?family=Londrina+Outline);
+@import url(https://fonts.googleapis.com/css?family=Londrina+Solid);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.landing-btn,
+.thomas,
+.about-4 {
+	display: none;
+}
+
+.landing,
+.home-3,
+.home-4,
+.about-2 {
+	height: 500px;
+}
+
+.templates-title,
+.template-title,
+.about-title {
+	font-size: 72px;
+}
+
+.landing-information,
+.featured-title,
+.quote-title,
+.template-information,
+.about-information {
+	font-size: 36px;
+}
+
+.featured-information,
+.quote-information {
+	font-size: 27px;
+}
+
+.featured-title,
+.quote-title,
+.templates-title,
+.template-title,
+.about-title {
+	font-weight: 700;
+}
+
+.btn,
+.btn:focus,
+.btn:hover,
+.btn:active:focus,
+.landing-information {
+	font-weight: 400;
+}
+
+.featured-information,
+.quote-information,
+.template-information,
+.about-information {
+	font-weight: 300;
+}
+
+.landing,
+.home-3 {
+	color: #FFFFFF;
+}
+
+.landing .btn,
+.landing .btn:focus,
+.landing .btn:hover,
+.landing .btn:active:focus,
+.home-3 .btn,
+.home-3 .btn:focus,
+.home-3 .btn:hover,
+.home-3 .btn:active:focus {
+	color: #FFFFFF;
+	border: 3px solid #FFFFFF;
+}
+
+.home-2 .btn,
+.home-2 .btn:focus,
+.home-2 .btn:hover,
+.home-2 .btn:active:focus,
+.templates-2 .btn,
+.templates-2 .btn:focus,
+.templates-2 .btn:active:focus,
+.download,
+.download:focus,
+.download:active:focus {
+	color: #000000;
+	border: 3px solid #000000;
+}
+
+.featured-information,
+.template-information,
+.about-title,
+.about-information {
+	margin-top: 20px;
+}
+
+.content {
+	padding: 20px 20px 0 20px;
+}
+
+p {
+	cursor: default;
+}
+
+button {
+	margin-top: 30px;
+}
+
+.btn,
+.btn:focus,
+.btn:hover,
+.btn:active:focus {
+	background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  outline: none;
+}
+
+/* Home - Landing */
+.home-1 {
+	background: #DD5E89;
+	background: -webkit-linear-gradient(to bottom left, #DD5E89, #F7BB97);
+	background: linear-gradient(to bottom left, #DD5E89, #F7BB97);
+}
+
+.landing-title {
+	font-weight: 900;
+	font-size: 54px;
+}
+
+.home-1 a,
+.home-1 a:link {
+	padding: 0;
+}
+
+.mobile-btn {
+	display: inline-block;
+}
+
+/* Home - Store links */
+.home-2 {
+	height: 1050px;
+}
+
+.resized-picture {
+	max-width: 90%;
+}
+
+/* Home - Quote*/
+.home-3 {
+	background: #000000;
+}
+
+/* Home - Picture */
+.home-4 {
+	background: url('../images/homepage.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+/* Templates - Landing */
+.templates-1 {
+	background: #136A8A;
+	background: -webkit-linear-gradient(to bottom left, #136A8A, #267871);
+	background: linear-gradient(to bottom left, #136A8A, #267871);
+}
+
+/* Templates - Store */
+.templates-2 {
+	height: 1000px;
+}
+
+.templates-title {
+	margin-top: 25px;
+}
+
+.template-title {
+	margin-top: 15px;
+}
+
+.download,
+.download:focus,
+.download:active:focus {
+	margin: 0;
+}
+
+.download:hover {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.preview {
+	margin: 5px 0;
+}
+
+/* About - Landing */
+.about-1 {
+	height: 650px;
+	background: #2C3E50;
+	background: -webkit-linear-gradient(to bottom left, #2C3E50, #3498BD);
+	background: linear-gradient(to bottom left, #2C3E50, #3498BD);
+}
+
+/* About - Picture */
+.about-2 {
+	background: url('../images/about-1.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+/* About - Profile */
+.about-3 {
+	height: 800px;
+}
+
+@media (min-width: 667px) {
+	.landing {
+		height: 425px;
+	}
+
+	/* Home - Store links */
+	.home-2 {
+		height: 1425px;
+	}
+
+	/* Home - Quote*/
+	.home-3 {
+		height: 325px;
+	}
+
+	/* About - Profile */
+	.about-3 {
+		height: 500px;
+	}
+}
+
+@media (min-width: 768px) {
+	.thomas,
+	.about-4 {
+		display: block;
+	}
+
+	.landing,
+	.about-1 {
+		height: 600px;
+	}
+
+	.home-4,
+	.about-2,
+	.about-4 {
+		height: 700px;
+	}
+
+	.featured-title,
+	.quote-title {
+		font-size: 72px;
+	}
+
+	.featured-information,
+	.quote-information {
+		font-size: 36px;
+		margin-top: 20px;
+	}
+
+	.landing,
+	.home-2,
+	.home-3,
+	.home-4 {
+		padding-top: 40px;
+	}
+
+	.content {
+		padding: 20px 50px 0 50px;
+	}
+
+	/* Home - Landing */
+	.landing-title {
+		font-size: 108px;
+	}
+
+	.landing-information {
+		font-size: 45px;
+	}
+
+	.landing-btn {
+		display: inline-block;
+	}
+
+	.mobile-btn {
+		display: none;
+	}
+
+	/* Home - Store links */
+	.home-2 {
+		height: 750px;
+	}
+
+	.featured-title {
+		margin-top: 75px;
+	}
+
+	.resized-picture {
+		max-width: 300px;
+		float: right;
+		margin-right: 50px;
+	}
+
+	/* Home - Quote*/
+	.home-3 {
+		height: 550px;
+	}
+
+	.quote-title {
+		margin-top: 20px;
+	}
+
+	/* About - Profile */
+	.about-3 {
+		height: 675px;
+	}
+
+	/* About - Picture */
+	.about-4 {
+		background: url('../images/about-2.jpg') center center no-repeat;
+		background-size: cover;
+	}
+
+	/* ngAnimate */
+	.slideup {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    height: 100%;
+	}
+	.slideup.ng-enter,
+	.slideup.ng-leave {
+	    -webkit-transition: all 1s ease;
+	    transition: all 1s ease;
+	}
+	.slideup.ng-enter {
+	    top: 100%;
+	}
+	.slideup.ng-enter-active {
+	    top: 0;
+	}
+	.slideup.ng-leave {
+	    top: 0;
+	}
+	.slideup.ng-leave-active {
+	    top: -100%;
+	}
+}
+#right,
+.close {
+	display: none;
+}
+
+/* Navigation */
+#menu {
+	height: 100px;
+}
+
+#left {
+	display: inline-block;
+	float: left;
+	padding-left: 35px;
+}
+
+#left a,
+#left a:link,
+#left a:hover,
+#left a:active,
+#left a:visited,
+#right a,
+#right a:link,
+#right a:hover,
+#right a:active,
+#right a:visited {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 10px;
+	color: #FFFFFF;
+}
+
+li {
+	list-style-type: none;
+}
+
+.nav-title {
+	font-family: 'Londrina Outline', cursive;
+	font-size: 72px;
+}
+
+.nav-title:hover {
+	font-family: 'Londrina Solid', cursive;
+}
+
+.nav-page {
+	font-weight: 700;
+	font-size: 27px;
+}
+
+/* Contact */
+#contact {
+	height: 575px;
+	background: #000000;
+	color: #FFFFFF;
+}
+
+.col-xs-5,
+.col-xs-7 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.contact-title {
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.contact-information {
+	font-weight: 300;
+	font-size: 27px;
+	padding-bottom: 20px;
+}
+
+i {
+	padding-bottom: 10px;
+}
+
+.fa-map-marker {
+	padding-left: 8px;
+}
+
+#contact a,
+#contact a:link,
+#contact a:hover,
+#contact a:active,
+#contact a:visited {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 15px;
+	color: #FFFFFF;
+}
+
+span {
+	font-size: 27px;
+	opacity: 0.6;
+}
+
+span:hover {
+	opacity: 1;
+}
+
+.location {
+	padding-left: 11px;
+}
+
+/* Alert */
+.alerts-container {
+	position: fixed;
+	width: inherit;
+	top: 0;
+	right: 0;
+}
+
+@media (min-width: 667px) {
+	/* Contact */
+	#contact {
+		height: 475px;
+	}
+}
+
+@media (min-width: 768px) {
+	/* Navigation */
+	#menu {
+		height: 150px;
+	}
+
+	#right {
+		display: inline-block;
+		float: right;
+		padding-top: 40px;
+		padding-right: 35px;
+	}
+
+	#right a {
+		opacity: 0.6;
+	}
+
+	#right a:hover {
+		opacity: 1;
+	}
+
+	/* Contact */
+	#contact {
+		height: 575px;
+		padding-top: 40px;
+		background: #000000;
+		color: #FFFFFF;
+	}
+
+	.contact-title {
+		font-size: 72px;
+	}
+
+	.contact-information {
+		font-size: 36px;
+	}
+
+	i {
+		padding-bottom: 25px;
+	}
+}
+.site-wrapper,
+label {
+  color: #FFFFFF;
+}
+
+.form-control,
+.form-control:focus,
+.user-submit,
+.user-submit:focus,
+.user-submit:hover,
+.user-submit:active:focus {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: none;
+  outline: none;
+}
+
+.site-wrapper {
+  background: #232526;
+  background: -webkit-linear-gradient(to top right, #232526 , #414345);
+  background: linear-gradient(to top right, #232526 , #414345);
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cover-container {
+  margin: 0 auto;
+}
+
+.user-title {
+  font-weight: 700;
+  font-size: 72px;
+  margin-top: -25px;
+}
+
+.user-information {
+  font-weight: 300;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.form-control,
+.form-control:focus {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.form-control::-webkit-input-placeholder { 
+  color: rgba(255, 255, 255, 0.5); 
+}
+.form-control:-moz-placeholder { 
+  color: rgba(255, 255, 255, 0.5); 
+}
+.form-control::-moz-placeholder { 
+  color: rgba(255, 255, 255, 0.5); 
+}
+.form-control:-ms-input-placeholder { 
+  color: rgba(255, 255, 255, 0.5); 
+}
+
+.user-submit,
+.user-submit:focus,
+.user-submit:hover,
+.user-submit:active:focus {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=samesies.css.map */

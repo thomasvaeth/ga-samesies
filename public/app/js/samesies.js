@@ -200,3 +200,4 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		return Auth.isSignedIn.apply(Auth);
 	}
 }]);
+//# sourceMappingURL=samesies.js.map
