@@ -6,6 +6,7 @@ Samesies is an idea I had during the course of General Assembly Seattle, so I di
 * Express/Node.js
 * Mongoose for MongoDB
 * AngularJS
+* Gulp
 * HTML
 * CSS
 * JavaScript
