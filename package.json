@@ -18,5 +18,9 @@
     "mongoose-validator": "^1.2.4",
     "ng-smooth-scroll": "^1.7.3",
     "node-mongo-seeds": "^2.2.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0"
   }
 }
