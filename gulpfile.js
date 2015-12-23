@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 gulp.task('concatScripts', function() {
 	gulp.src([
@@ -11,6 +12,13 @@ gulp.task('concatScripts', function() {
 		'public/app/controllers.js',
 		'public/app/app.js'
 	]).pipe(concat('samesies.js')
+	).pipe(gulp.dest('public/app/js')
+	);
+});
+
+gulp.task('minifyScripts', function() {
+	gulp.src('public/app/js/samesies.js'
+	).pipe(uglify()
 	).pipe(gulp.dest('public/app/js')
 	);
 });
