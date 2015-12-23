@@ -14,7 +14,7 @@ Samesies is an idea I had during the course of General Assembly Seattle, so I di
 
 ### Installation
 * ````npm install````
-  - Node modules include bcrypt, body-parser, express, express-jwt, jsonwebtoken, mongoose, mongoose-validator, ng-smooth-scroll, and node-mongo-seeds.
+  - Node modules include bcrypt, body-parser, express, express-jwt, gulp, gulp-concat, gulp-minify-css, gulp-rename, gulp-sourcemaps, gulp-uglify, jsonwebtoken, mongoose, mongoose-validator, ng-smooth-scroll, and node-mongo-seeds.
 
 ### Approach Taken
 [Wireframes and ERDs](https://github.com/thomasvaeth/ga-samesies/tree/master/screenshots)
