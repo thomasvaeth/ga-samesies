@@ -11,6 +11,8 @@ Samesies is an idea I had during the course of General Assembly Seattle, so I di
 * CSS
 * JavaScript
 * Bootstrap
+* Animate.CSS
+* WOW.js
 
 ### Installation
 * ````npm install````
