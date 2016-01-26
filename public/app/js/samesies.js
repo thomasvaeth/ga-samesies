@@ -200,4 +200,6 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		return Auth.isSignedIn.apply(Auth);
 	}
 }]);
+
+new WOW().init();
 //# sourceMappingURL=samesies.js.map

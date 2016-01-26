@@ -10,7 +10,7 @@
 <div class="templates-2" ng-repeat="template in templates">
 	<div class="content">
 		<p class="template-title" id="{{ template._id }}">{{ template.name }} Template</p>
-		<img ng-src="{{ template.desktop }}" class="center-block img-responsive">
+		<img ng-src="{{ template.desktop }}" class="center-block img-responsive wow fadeIn animated">
 		<p class="template-information">{{ template.description }}</p>
 		<a ng-href="{{ template.preview }}" target="_blank"><button class="btn btn-lg preview">Live Preview</button></a>
 		<div ng-hide="isSignedIn()" ng-include="'app/views/paypal.html'"></div>
